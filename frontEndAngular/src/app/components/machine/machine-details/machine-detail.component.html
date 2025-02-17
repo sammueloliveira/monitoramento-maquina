@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>Detalhes da Máquina</mat-card-title>
+  <mat-card-content *ngIf="machine">
+    <p><strong>Nome da Máquina:</strong> {{ machine.name }}</p>
+    <p><strong>Localização:</strong> {{ machine.location }}</p>
+    <p>
+      <strong>Status:</strong>
+      {{
+        machine.status === enumStatus.Operando
+          ? "Operando"
+          : machine.status === enumStatus.ParadaManutencao
+          ? "Parada em Manutenção"
+          : "Desligada"
+      }}
+    </p>
+  </mat-card-content>
+
+  <div>
+    <button mat-raised-button routerLink="/machines" color="primary">
+      Voltar
+    </button>
+  </div>
+</mat-card>

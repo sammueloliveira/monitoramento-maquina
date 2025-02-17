@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-title>Cadastro de Máquina</mat-card-title>
+  <form #machineForm="ngForm" (ngSubmit)="createMachine(machineForm)">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nome da Máquina</mat-label>
+      <input
+        matInput
+        placeholder="Nome"
+        [(ngModel)]="machine.name"
+        name="name"
+        maxlength="50"
+        required
+      />
+      <mat-error *ngIf="machineForm.submitted && !machine.name">
+        Nome é obrigatório.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Localização</mat-label>
+      <input
+        matInput
+        placeholder="Cidade ou Endereço"
+        [(ngModel)]="machine.location"
+        name="location"
+        (blur)="searchLocation()"
+        maxlength="100"
+        required
+      />
+      <mat-error *ngIf="machineForm.submitted && !machine.location">
+        Localização é obrigatória.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Status</mat-label>
+      <mat-select [(ngModel)]="machine.status" name="status" required>
+        <mat-option [value]="EnumStatus.Operando">Operando</mat-option>
+        <mat-option [value]="EnumStatus.ParadaManutencao">Parada para manutenção</mat-option>
+        <mat-option [value]="EnumStatus.Desligada">Desligada</mat-option>
+      </mat-select>
+      <mat-error *ngIf="machineForm.submitted && !machine.status">
+        Status é obrigatório.
+      </mat-error>
+    </mat-form-field>
+    
+
+    <div class="actions">
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+      <button mat-raised-button color="warn" type="button" (click)="cancel()">Cancelar</button>
+    </div>
+  </form>
+</mat-card>

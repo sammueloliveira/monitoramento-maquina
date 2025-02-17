@@ -1,0 +1,34 @@
+<mat-card>
+  <mat-card-title>Editar Máquina</mat-card-title>
+  <form (ngSubmit)="editMachine()">
+    
+  
+    <mat-form-field>
+      <mat-label>Nome da Máquina</mat-label>
+      <input matInput placeholder="Nome" [(ngModel)]="machine.name" name="name" required />
+    </mat-form-field>
+
+   
+    <mat-form-field>
+      <mat-label>Localização</mat-label>
+      <input matInput placeholder="Localização" [(ngModel)]="machine.location" name="location" required />
+    </mat-form-field>
+
+   
+    <mat-form-field>
+      <mat-label>Status</mat-label>
+      <mat-select [(ngModel)]="machine.status" name="status" required>
+        <mat-option [value]="enumStatus.Operando">Operando</mat-option>
+        <mat-option [value]="enumStatus.ParadaManutencao">Parada para manutenção</mat-option>
+        <mat-option [value]="enumStatus.Desligada">Desligada</mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <p><strong>Status Atualizado:</strong> {{ statusMessage }}</p>
+
+    <div>
+      <button mat-raised-button type="submit" color="primary">Salvar</button>
+      <button mat-raised-button type="button" (click)="cancel()" color="warn">Cancelar</button>
+    </div>
+  </form>
+</mat-card>

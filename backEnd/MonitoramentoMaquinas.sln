@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{B0ED7E91-7E67-47AB-8D19-310141DEE1B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{8286C449-6242-45E2-97A7-75EECE6549EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{F6FB146E-FE6E-44B1-BDCD-773F04868868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - HelpConfig", "4 - HelpConfig", "{B5F68EC9-08AB-4657-9A42-7EDA80D18EC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoramentoMaquinas.Presentation", "MonitoramentoMaquinas.Presentation\MonitoramentoMaquinas.Presentation.csproj", "{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoramentoMaquinas.Domain", "MonitoramentoMaquinas.Domain\MonitoramentoMaquinas.Domain.csproj", "{220B61E0-1E2C-4438-9241-8AE2B75180B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoramentoMaquinas.Infra", "MonitoramentoMaquinas.Infra\MonitoramentoMaquinas.Infra.csproj", "{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoramentoMaquinas.HelpConfig", "MonitoramentoMaquinas.HelpConfig\MonitoramentoMaquinas.HelpConfig.csproj", "{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220B61E0-1E2C-4438-9241-8AE2B75180B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220B61E0-1E2C-4438-9241-8AE2B75180B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220B61E0-1E2C-4438-9241-8AE2B75180B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220B61E0-1E2C-4438-9241-8AE2B75180B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C226F9A4-677D-4F7B-8EC7-AC22D015C0B5} = {B0ED7E91-7E67-47AB-8D19-310141DEE1B1}
+		{220B61E0-1E2C-4438-9241-8AE2B75180B3} = {8286C449-6242-45E2-97A7-75EECE6549EA}
+		{7A26A1EB-2DEB-4FCA-85F2-B29721CB1E1F} = {F6FB146E-FE6E-44B1-BDCD-773F04868868}
+		{B89ECAEB-3175-45BA-BB5C-8D248E6E5C29} = {B5F68EC9-08AB-4657-9A42-7EDA80D18EC3}
+	EndGlobalSection
+EndGlobal
